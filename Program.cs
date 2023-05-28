@@ -40,6 +40,40 @@ PrintResult(resultLine);
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
+ int GetSum(int m, int n)
+{
+    if (n > m)
+        return n + GetSum(m, n - 1);
+    return m;
+}
+
+// Чтение данных из консоли
+int ReadData(string line)
+{
+    Console.Write(line);
+    int number = int.Parse(Console.ReadLine() ?? "0");
+    return number;
+}
+
+// Метод выводит результат пользователю
+void PrintData(string msg, int res)
+{
+    Console.WriteLine(msg + res);
+}
+
+// Основной код программы
+// 1  Вводим данные
+int m = ReadData("Введите число M: ");
+int n = ReadData("Введите число N: ");
+
+// 2 Считаем сумму
+int sum = GetSum(m,n);
+
+// Выводим результат
+PrintData("Сумма элементов от М до N равна: ",sum);
+
+
+
 // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
