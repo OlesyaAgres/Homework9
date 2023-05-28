@@ -3,6 +3,8 @@
 
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+
+/*
 int ReadData(string line)
 {
     Console.Write(line);
@@ -10,13 +12,10 @@ int ReadData(string line)
     return number;
 }
 
-// Печать результата
 void PrintResult(string prefix)
 {
     Console.WriteLine(prefix);
 }
-
-// Функция рекурсии
 
 string LineGenRec(int num)
 {
@@ -26,8 +25,7 @@ string LineGenRec(int num)
     }
     else
     {
-        //return LineGenRec(num - 1) + " " + num ;
-        return num + " " + LineGenRec (num - 1);
+              return num + " " + LineGenRec (num - 1);
     }
 }
 
@@ -35,7 +33,7 @@ int number = ReadData("Введите число N: ");
 string resultLine = LineGenRec(number);
 PrintResult(resultLine);
 
-
+*/
 
 // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
