@@ -72,6 +72,7 @@ PrintData("Сумма элементов от М до N равна: ",sum);
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
 
+/*
 int Ackerman(int n, int m)
 {
   if (n == 0)
@@ -95,7 +96,6 @@ void PrintData(string msg, int res)
     Console.WriteLine(msg + res);
 }
 
-
 int n = ReadData("Введите число N: ");
 int m = ReadData("Введите число M: ");
 
@@ -103,4 +103,4 @@ int sumAckerman = Ackerman(n, m);
 
 PrintData("значение функции Аккермана равно: ", sumAckerman);
 
-
+*/
